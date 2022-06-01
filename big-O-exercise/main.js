@@ -36,3 +36,14 @@ function exerciseThree(input) {
 }
 // bigO(n + n^2) = O(n^2)
 // exerciseThree big-O complexity: O(n^2) - quadratic because it has to loop through the input number of times
+
+function exerciseFour(n) {
+    let arr = [];
+  for (let i = 0; i < n.length; i++) {
+    console.log('lorem');
+    arr[i] = "lorem";
+  }
+    return arr;
+}
+
+// space complexity: O(n) - linear because it has to loop through the input number of times
