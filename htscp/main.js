@@ -6,3 +6,31 @@ function containItem(arr1, arr2) {
 console.log(containItem(arr1, arr2));
 
 // compare two arrays and return true if they have the same items
+
+function containsCommonItem(arr1, arr2) {
+  let map = {};
+  arr1.forEach(i => {
+    if (!map[i]) {
+      let item = arr1[i];
+      map[item] = true;
+    }
+  });
+  arr2.forEach(i => {
+    if (map[i]) {
+      return true;
+    }
+  });
+}
+// compare two arrays and return true if they have the same items
+
+function hasPairWithSum(arr, num) {
+  let set = new Set();
+  arr.forEach(i => {
+    if (set.has(i)) {
+      return true;
+    }
+    set.add(num - i);
+  });
+  return false;
+}
+// google interview question - given an array of numbers, return true if there is a pair of numbers that sum to 0
