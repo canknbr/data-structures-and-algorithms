@@ -65,7 +65,7 @@ function firstRecurringCharacter(arr) {
     }
   }
   return undefined;
-}
+} // using hash table and bigO of O(n)
 function firstRecurringCharacterwithForEach(input) {
   const char = input.forEach(item =>
     input.forEach(item2 => {
@@ -78,4 +78,4 @@ function firstRecurringCharacterwithForEach(input) {
     return undefined;
   }
   return char.join('');
-}
+} // using forEach and bigO of O(n^2)
