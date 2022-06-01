@@ -28,3 +28,11 @@ function exerciseTwo(input) {
 }
 // bigO(4 + 5n) = O(n)
 // exerciseTwo big-O complexity: O(n) - linear because it has to loop through the input number of times
+
+function exerciseThree(input) {
+  input.forEach(item => console.log(item));
+
+  input.forEach(item => input.forEach(item2 => console.log(item + item2)));
+}
+// bigO(n + n^2) = O(n^2)
+// exerciseThree big-O complexity: O(n^2) - quadratic because it has to loop through the input number of times
