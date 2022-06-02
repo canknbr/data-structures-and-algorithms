@@ -34,3 +34,16 @@ function hasPairWithSum(arr, num) {
   return false;
 }
 // google interview question - given an array of numbers, return true if there is a pair of numbers that sum to 0
+
+var twoSum = function (nums, target) {
+  let arr = [];
+  nums.forEach((i, index) => {
+    nums.forEach((j, index2) => {
+      if (i + j === target) {
+        arr.push(index, index2);
+        
+      }
+    });
+  });
+  return [...new Set(arr)];
+};
